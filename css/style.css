@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -21,7 +21,7 @@ header {
 .header-nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  line-height: 70px;
 }
 
 .nav-item {
@@ -180,4 +180,49 @@ header {
 .feature-box_title {
   margin-bottom: 10px;
   font-size: 20px;
+}
+
+/* ---------------------------------------------- */
+
+.profile {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.feature-box {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.feature-box-item {
+  width: 50%;
+}
+
+.feature-box_mv {
+  background-image: url(../images/my-icon.jpg);
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.feature-box_text {
+  text-align: left;
+}
+
+.feature-box_text:nth-of-type(1) {
+  margin-bottom: 20px;
+}
+
+.feature-text_mb {
+  margin-bottom: 5px;
+}
+
+/* ----------------------------------------------------- */
+.copyright {
+  line-height: 60px;
+  background-color: #ec715f;
+  text-align: center;
+  color: #fafafa;
+  height: 60px;
 }

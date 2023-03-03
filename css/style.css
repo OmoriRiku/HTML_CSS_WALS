@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-}
-
 .container {
   max-width: 1024px;
   margin: 0 auto;
@@ -24,14 +20,24 @@ header {
   line-height: 70px;
 }
 
+.nav {
+  display: flex;
+}
+
 .nav-item {
-  display: inline-block;
   padding: 0 30px;
   font-size: 16px;
+  width: 120px;
+  list-style: none;
+}
+
+.nav-item:last-of-type {
+  padding-right: 0;
 }
 
 .nav-item a {
   color: #fafafa;
+  text-decoration: none;
 }
 
 .logo {
@@ -58,7 +64,7 @@ header {
   margin-bottom: 10px;
 }
 
-.mv-text_paragraph {
+.mv-text_pragraph {
   font-size: 20px;
 }
 
@@ -70,7 +76,7 @@ header {
 
 .page-title {
   font-size: 32px;
-  padding-bottom: 8px;
+  padding-bottom: 11px;
   position: relative;
   display: inline-block;
   margin-bottom: 30px;
@@ -88,6 +94,7 @@ header {
 }
 
 .page-paragraph {
+  text-align: center;
   font-size: 16px;
   margin-bottom: 30px;
 }
@@ -95,8 +102,11 @@ header {
 .page-container {
   padding-top: 90px;
   padding-bottom: 90px;
-  text-align: center;
   color: #000;
+}
+
+.tx-center {
+  text-align: center;
 }
 
 /* ----------------------------------- */
@@ -210,12 +220,69 @@ header {
   text-align: left;
 }
 
+.feature-box_text h4 {
+  font-size: 20px;
+}
+
 .feature-box_text:nth-of-type(1) {
   margin-bottom: 20px;
 }
 
 .feature-text_mb {
   margin-bottom: 5px;
+}
+
+/* ----------------------------------------------------- */
+.contact {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-box {
+  display: flex;
+}
+
+.contact-item_left,
+.contact-item_right {
+  width: 50%;
+}
+
+.contact-form_left {
+  max-width: 130px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.contact-form_left:last-of-type {
+  margin-bottom: 0;
+}
+
+.contact-form_left h4 {
+  font-size: 20px;
+}
+
+.contact-form_left a {
+  display: block;
+  color: #212121;
+}
+
+.contact-form_right {
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+.contact-form_right h4 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.contact-favicon {
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+.contact-favicon:nth-of-type(3) {
+  margin-right: 0;
 }
 
 /* ----------------------------------------------------- */

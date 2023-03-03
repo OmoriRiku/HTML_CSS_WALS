@@ -3,3 +3,144 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #ec715f;
+  height: 70px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 0 30px;
+  font-size: 16px;
+}
+
+.nav-item a {
+  color: #fafafa;
+}
+
+.logo {
+  height: 70px;
+}
+
+/* ----------------------*/
+
+.mv {
+  background-image: url(../images/mv.png);
+  height: 650px;
+  background-size: cover;
+  background-position: center;
+}
+
+.mv-text {
+  padding-top: 200px;
+  text-align: center;
+  color: #fafafa;
+}
+
+.mv-text_title {
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+.mv-text_paragraph {
+  font-size: 20px;
+}
+
+/* ------------------------*/
+
+.bg-color {
+  background-color: #eceff1;
+}
+
+.portfolio-container {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.portfolio {
+  max-width: 920px;
+  margin: 0 auto;
+  text-align: center;
+  color: #000;
+}
+
+.portfolio_title {
+  font-size: 32px;
+  padding-bottom: 8px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.portfolio_title::before{
+    width: 70px;
+    margin: 0 auto;
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 3px solid #ec715f;
+}
+
+.portfolio_paragraph {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.portfolio-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-img {
+  width: 300px;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+}
+
+.img1 {
+  background-image: url(../images/sketch.jpg);
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.img2 {
+  background-image: url(../images/websuku.png);
+  margin-right: 10px;
+}
+
+.img3 {
+  background-image: url(../images/write.jpg);
+}
+
+.img4 {
+  background-image: url(../images/webcamp.png);
+  margin-right: 10px;
+}
+
+.img5 {
+  background-image: url(../images/talk.jpg);
+  margin-right: 10px;
+}
+
+.img6 {
+  background-image: url(../images/webcamp-mother.png);
+}

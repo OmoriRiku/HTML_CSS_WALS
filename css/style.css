@@ -49,8 +49,8 @@ header {
 .mv {
   background-image: url(../images/mv.png);
   height: 650px;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 }
 
 .mv-text {
@@ -119,15 +119,15 @@ header {
 .portfolio-box {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .portfolio-box-img {
   width: 300px;
   height: 250px;
-  background-position: center;
   background-size: cover;
+  background-position: center;
 }
-
 .img1 {
   background-image: url(../images/sketch.jpg);
   margin-bottom: 10px;
@@ -149,8 +149,8 @@ header {
 }
 
 .img5 {
-  background-image: url(../images/talk.jpg);
   margin-right: 10px;
+  background-image: url(../images/talk.jpg);
 }
 
 .img6 {
@@ -171,6 +171,9 @@ header {
 
 .feature-box-item {
   width: 320px;
+}
+
+.feature-box_title {
   text-align: center;
 }
 
@@ -199,16 +202,16 @@ header {
   margin: 0 auto;
 }
 
-.feature-box {
+.profile-box {
   display: flex;
   justify-content: flex-start;
 }
 
-.feature-box-item {
+.profile-box-item {
   width: 50%;
 }
 
-.feature-box_mv {
+.profile-box_mv {
   background-image: url(../images/my-icon.jpg);
   width: 250px;
   height: 250px;
@@ -216,20 +219,20 @@ header {
   margin: 0 auto;
 }
 
-.feature-box_text {
-  text-align: left;
-}
-
-.feature-box_text h4 {
+.profile-box_text h4 {
   font-size: 20px;
 }
 
-.feature-box_text:nth-of-type(1) {
+.profile-box_text:nth-of-type(1) {
   margin-bottom: 20px;
 }
 
-.feature-text_mb {
+.profile-text_mb {
   margin-bottom: 5px;
+}
+
+.favicon-text {
+  text-align: center;
 }
 
 /* ----------------------------------------------------- */
@@ -292,4 +295,129 @@ header {
   text-align: center;
   color: #fafafa;
   height: 60px;
+}
+
+/* ----------------------------------------------------- */
+
+@media screen and (max-width: 767px) {
+  .container,
+  .portfolio,
+  .feature,
+  .profile,
+  .contact {
+    max-width: 90%;
+  }
+  
+  .d-none {
+    display: none;
+  }
+  
+  .mv {
+    background-image: url(../images/code.png);
+  }
+  
+  /* ------------------------------------- */
+  
+  .mv-text_title {
+    font-size: 40px;
+  }
+  
+  /* -------------------------------------- */
+  
+  .portfolio-box {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* -------------------------------------- */
+  
+  .img1 {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+
+  .img2 {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .img4 {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .img5 {
+    margin-right: 0;
+  }
+  
+  /* ------------------------------------- */
+  
+  .feature-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .feature-box-item {
+    width: 100%;
+  }
+  
+  .feature-box-item:nth-of-type(1) {
+    margin: 0;
+  }
+  
+  .feature-box-item:nth-of-type(2) {
+    margin: 0;
+  }
+  
+  .feature-box_text {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .feature-box_text:nth-of-type(1) {
+    margin-bottom: 10px;
+  }
+  
+  .feature-box_text:nth-of-type(2) {
+    margin-bottom: 10px;
+  }
+  
+  /* ------------------------------------- */
+  .profile-box {
+    flex-direction: column;
+  }
+  
+  .profile-box-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .profile-box_text {
+    text-align: center;
+  }
+  
+  /* ------------------------------------ */
+  
+  .contact-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-item_left,
+  .contact-item_right {
+    width: 100%;
+  }
+  
+  .contact-item_left {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form_right {
+    text-align: center;
+  }
+  
+  .contact-favicon {
+    margin-right: 8px;
+  }
 }
